@@ -49,7 +49,7 @@ public extension String {
     ///
     /// - parameter name: The preferred icon name.
     /// - returns: A string that will appear as icon with materialDesign.
-    public static func materialDesignIcon(name: materialDesign) -> String {
+    public static func materialDesignIcon(name: MaterialDesign) -> String {
         return name.rawValue.substring(to: name.rawValue.characters.index(name.rawValue.startIndex, offsetBy: 1))
     }
 
@@ -70,9 +70,9 @@ public extension String {
     ///
     /// - parameter code: The preferred icon name.
     /// - returns: An internal corresponding materialDesign code.
-    public static func materialDesign(code: String) -> materialDesign? {
+    public static func materialDesign(code: String) -> MaterialDesign? {
 
-        guard let raw = materialDesignIcons[code], let icon = materialDesign(rawValue: raw) else {
+        guard let raw = materialDesignIcons[code], let icon = materialDesign(code: raw) else {
             return nil
         }
 
@@ -90,7 +90,7 @@ public extension UIImage {
     /// - parameter size: The image size.
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with materialDesign
-    public static func materialDesignIcon(name: materialDesign, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear) -> UIImage {
+    public static func materialDesignIcon(name: MaterialDesign, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear) -> UIImage {
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = NSTextAlignment.center
 

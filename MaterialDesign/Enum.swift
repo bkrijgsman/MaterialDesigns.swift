@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 /// An enumaration of materialDesign icon names.
-public enum materialDesign: String {
+public enum MaterialDesign: String {
     case fiveHundredPixels = "\u{f26e}"
     case addressBook = "\u{f2b9}"
     case addressBookO = "\u{f2ba}"
@@ -799,8 +799,8 @@ public enum materialDesign: String {
     ///
     /// - parameter code: The preferred icon name.
     /// - returns: materialDesign icon.
-    public static func fromCode(_ code: String) -> materialDesign? {
-        guard let raw = materialDesignIcons[code], let icon = materialDesign(rawValue: raw) else {
+    public static func fromCode(_ code: String) -> MaterialDesign? {
+        guard let raw = materialDesignIcons[code], let icon = MaterialDesign(rawValue: raw) else {
             return nil
         }
         return icon
