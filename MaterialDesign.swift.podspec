@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = "materialDesign.swift"
   s.version          = "1.1.0"
-  s.summary          = "Use Font Awesome in your Swift projects"
-  s.homepage         = "https://github.com/thii/materialDesign.swift"
+  s.summary          = "Use Material design in your Swift projects, copy from other repo :-)"
+  s.homepage         = "https://github.com/thii/fontAwesome.swift"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { "Thi Doan" => "t@thi.im" }
   s.source           = { :git => "https://github.com/thii/materialDesign.swift.git", :tag => s.version.to_s }
